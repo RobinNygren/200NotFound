@@ -19,7 +19,7 @@ const router = createBrowserRouter([
         element: <NotFound />,
       },
       {
-        path: "/",
+        path: "/:mainSubject",
         element: <MainSubject />,
       },
       {
