@@ -8,7 +8,7 @@ export const initialSubSubjects: subSubjectTypes[] = [
     image:
       "https://elfsborg.se/wp-content/uploads/2017/04/BB170403JJ013-770x530.jpg",
     type: "nöjen",
-    specificType: "sport",
+    specificType: "Sport",
   },
   {
     subSubject: "Basket",
@@ -16,14 +16,14 @@ export const initialSubSubjects: subSubjectTypes[] = [
     image:
       "https://imengine.gota.infomaker.io/?uuid=986e4f87-c567-5179-b6be-dbf5bd21a146&width=960&height=640&type=preview&source=false&q=90&z=100&x=0.045&y=0.000&crop_w=0.910&crop_h=1.000&function=cropresize",
     type: "nöjen",
-    specificType: "sport",
+    specificType: "Sport",
   },
   {
     subSubject: "Hockey",
     info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero architecto cumque reiciendis, laboriosam odit voluptas, nesciunt soluta illo unde exercitationem magni. Aut facilis ut ipsam tempora ducimus! Animi, officiis odio!",
     image: "",
     type: "nöjen",
-    specificType: "sport",
+    specificType: "Sport",
   },
 
   {
@@ -32,7 +32,7 @@ export const initialSubSubjects: subSubjectTypes[] = [
     image:
       "https://www.boras.se/images/18.4f4814b215c171faa9349338/1495205883290/72dpi_almenas_badramp_foto_anna.jpg",
     type: "nöjen",
-    specificType: "bad",
+    specificType: "Badplatser",
   },
   {
     subSubject: "Kypesjön",
@@ -40,7 +40,7 @@ export const initialSubSubjects: subSubjectTypes[] = [
     image:
       "https://www.boras.se/images/18.12bf08d215c19e09dfaa8055/1495469983322/72dpi_kype_badplats_foto_anna.jpg",
     type: "nöjen",
-    specificType: "bad",
+    specificType: "Badplatser",
   },
   {
     subSubject: "Rammsjön",
@@ -48,6 +48,31 @@ export const initialSubSubjects: subSubjectTypes[] = [
     image:
       "https://www.boras.se/images/18.12bf08d215c19e09dfacce4d/1495555180099/72dpi_rammsjon_badplats_foto_anna.jpg",
     type: "nöjen",
-    specificType: "bad",
+    specificType: "Badplatser",
+  },
+
+  {
+    subSubject: "Säs",
+    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero architecto cumque reiciendis, laboriosam odit voluptas, nesciunt soluta illo unde exercitationem magni. Aut facilis ut ipsam tempora ducimus! Animi, officiis odio!",
+    image:
+      "https://www.boras.se/images/18.4f4814b215c171faa9349338/1495205883290/72dpi_almenas_badramp_foto_anna.jpg",
+    type: "nöjen",
+    specificType: "Sjukhus",
+  },
+  {
+    subSubject: "Vårdcentral",
+    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero architecto cumque reiciendis, laboriosam odit voluptas, nesciunt soluta illo unde exercitationem magni. Aut facilis ut ipsam tempora ducimus! Animi, officiis odio!",
+    image:
+      "https://www.boras.se/images/18.12bf08d215c19e09dfaa8055/1495469983322/72dpi_kype_badplats_foto_anna.jpg",
+    type: "nöjen",
+    specificType: "Vårdcentral",
+  },
+  {
+    subSubject: "Rådgivning",
+    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero architecto cumque reiciendis, laboriosam odit voluptas, nesciunt soluta illo unde exercitationem magni. Aut facilis ut ipsam tempora ducimus! Animi, officiis odio!",
+    image:
+      "https://www.boras.se/images/18.12bf08d215c19e09dfacce4d/1495555180099/72dpi_rammsjon_badplats_foto_anna.jpg",
+    type: "nöjen",
+    specificType: "1177",
   },
 ];
