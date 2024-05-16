@@ -11,7 +11,7 @@ type MainSubjectProps = {
 };
 
 export const MainSubject = () => {
-  const { page } = useParams();
+  const { page, choice } = useParams();
 
   const { state } = useContext(GlobalSubjects);
 
@@ -25,7 +25,7 @@ export const MainSubject = () => {
     <>
       {subjectData.length > 0 ? (
         subjectData.map((data: any) => (
-          <NavLink to={`/${data.page}`} key={data.mainSubject}>
+          <NavLink to={`/${page}/${data.type}`} key={data.mainSubject}>
             <SubjectCard
               imgSrc={data.image}
               info={data.info}
