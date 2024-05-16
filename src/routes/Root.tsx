@@ -2,6 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import Footer from "../components/Layout/Footer";
 import Header from "../components/Layout/Header";
 import Navbar from "../components/Layout/Navbar";
+import RenderCarousel from "../components/RenderCarousel/RenderCarousel";
 
 const Root = () => {
   /*   const location = useLocation(); */
@@ -12,6 +13,7 @@ const Root = () => {
         <Navbar />
         <main className="flex-grow bg-color-scheme-background">
           {/* {location.pathname === "/" && <placeholder />} */}
+          <RenderCarousel />
           <Outlet />
         </main>
         <Footer />
