@@ -29,7 +29,7 @@ export type CardProps = {
 };
 
 export type RenderCarouselProps = {
-  images: { src: string; alt?: string }[];
+  images: { src: string; alt?: string; link: string }[];
 };
 
 export type subSubjectTypes = {

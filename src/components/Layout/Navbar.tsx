@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import IconPrototype from "/IconPrototype.svg";
 import Dropdown from "./Dropdown";
 
-const Header = () => {
+const Navbar = () => {
   return (
     <nav className="bg-color-scheme-primary text-bookFlix-colors-detail p-4">
       <div className="flex justify-between items-center">
@@ -23,6 +23,5 @@ const Header = () => {
   );
 };
 
-export default Header;
-
+export default Navbar;
 
