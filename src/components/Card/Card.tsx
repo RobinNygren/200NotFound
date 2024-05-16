@@ -1,10 +1,14 @@
-const Card: React.FC = () => {
+import { CardProps } from "../../types/types";
+
+const Card: React.FC<CardProps> = ({ src, alt }) => {
   return (
     <div className="mx-2 flex-none w-30">
       <div
         className="flex justify-center items-center mb-4"
         style={{ minHeight: "250px" }}
-      ></div>
+      >
+        <img src={src} alt={alt || "image"} />
+      </div>
       <div className="text-center flex-grow">
         <h3 className="text-l font-bold text-color-scheme-detail truncate">
           placeholder h3
