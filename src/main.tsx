@@ -5,7 +5,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/Root.tsx";
 import NotFound from "./routes/NotFound.tsx";
-import { HeadSubject } from "./routes/HeadSubject.tsx";
+import { MainSubject } from "./routes/MainSubject.tsx";
 import { SubSubjects } from "./routes/SubSubjects.tsx";
 
 const router = createBrowserRouter([
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/",
-        element: <HeadSubject />,
+        element: <MainSubject />,
       },
       {
         //params för vald kategori?
