@@ -5,8 +5,8 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/Root.tsx";
 import NotFound from "./routes/NotFound.tsx";
-import { MainSubject } from "./routes/MainSubject.tsx";
-import { SubSubjects } from "./routes/SubSubjects.tsx";
+import { MainCategory } from "./routes/MainCategory.tsx";
+import { SubCategory } from "./routes/SubCategory.tsx";
 
 const router = createBrowserRouter([
   {
@@ -20,12 +20,12 @@ const router = createBrowserRouter([
       },
       {
         path: "/:page",
-        element: <MainSubject />,
+        element: <MainCategory />,
       },
       {
         //params för vald kategori?
         path: "/:page/:choice",
-        element: <SubSubjects />,
+        element: <SubCategory />,
       },
     ],
   },

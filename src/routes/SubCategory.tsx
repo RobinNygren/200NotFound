@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { GlobalSubjects } from "../state/GlobalStateContext";
 import { SubjectCard } from "../components/SubjectCard/SubjectCard";
 
-export const SubSubjects = () => {
+export const SubCategory = () => {
   const { page, choice } = useParams<{ page: string; choice: string }>();
   const { state } = useContext(GlobalSubjects);
 

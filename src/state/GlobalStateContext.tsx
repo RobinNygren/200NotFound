@@ -1,11 +1,11 @@
 import { createContext } from "react";
-import { initialMainSubjects } from "../assets/data/MainSubjectContext";
-import { initialSubSubjects } from "../assets/data/SubSubjectContext";
+import { initialMainSubjects } from "../assets/data/MainCategoryContext";
+import { initialSubSubjects } from "../assets/data/SubCategoryContext";
 // import { initialSongs } from "../data/SongContext";
 // import { SongType } from "../Types/SongTypes";
 // import { Action } from "../Types/ReducerTypes";
-import { SubSubjects } from "../routes/SubSubjects";
-import { MainSubject } from "../routes/MainSubject";
+import { SubSubjects } from "../routes/SubCategory";
+import { MainSubject } from "../routes/MainCategory";
 import { mainSubjectTypes, subSubjectTypes } from "../types/types";
 
 type GlobalContextType = {

@@ -10,7 +10,7 @@ type MainSubjectProps = {
   subject: string;
 };
 
-export const MainSubject = () => {
+export const MainCategory = () => {
   const { page } = useParams();
   const { state } = useContext(GlobalSubjects);
 
