@@ -1,7 +1,5 @@
 // Här lägger vi in mer specifik info om HeadSubjects, såsom länkar och info om olika vårdcentraler, nummer till 1177 etc. Eller tex för nöjen olika sporter ifall du valt sport som headSubject.
 
-import { SubjectDetails } from "../components/SubjectDetails/SubjectDetails";
-
 export const SubSubjects = () => {
   const data = [
     {
@@ -17,8 +15,9 @@ export const SubSubjects = () => {
   ];
   return (
     <>
-      <div>SubSubjcts</div>;
-      <SubjectDetails data={data} />
+      <div>
+        <SubjectCard imgSrc={""} info="" subject="" />
+      </div>
     </>
   );
 };

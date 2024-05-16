@@ -31,3 +31,14 @@ export type CardProps = {
 export type RenderCarouselProps = {
   images: { src: string; alt?: string }[];
 };
+
+export type subSubjectTypes = {
+  subSubject: string;
+  image: any;
+  info: string;
+};
+export type mainSubjectTypes = {
+  mainSubject: string;
+  image: any;
+  info: string;
+};
