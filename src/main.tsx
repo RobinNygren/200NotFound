@@ -8,6 +8,7 @@ import NotFound from "./routes/NotFound.tsx";
 import MainSubject from "./routes/MainSubject.tsx";
 import SubSubjects from "./routes/SubSubjects.tsx";
 import { GlobalSubjectsProvider } from "./state/GlobalStateContext.tsx";
+import SubSubjectDetail from "./components/SubSubjectDetail/SubSubjectDetail.tsx";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
         //params för vald kategori?
         path: "/:page/:choice",
         element: <SubSubjects />,
+      },
+      {
+        path: "/:page/:choice/:subSubject",
+        element: <SubSubjectDetail />,
       },
     ],
   },

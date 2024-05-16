@@ -1,16 +1,16 @@
 import React, { useContext } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, NavLink } from "react-router-dom";
 import { GlobalSubjects } from "../state/GlobalStateContext";
 import { SubjectCard } from "../components/SubjectCard/SubjectCard";
 
 const SubSubjects = () => {
-  const { choice } = useParams();
+  const { choice, page } = useParams();
   const { state } = useContext(GlobalSubjects);
 
   console.log(choice, "choice in SubSubjects");
 
   const subSubjectData = state.subSubjects.filter(
-    (subject) => subject.specificType === choice
+    (subject) => subject.type === page && subject.specificType === choice
   );
 
   console.log(subSubjectData, "subSubjectData for SubSubjects");
@@ -19,12 +19,16 @@ const SubSubjects = () => {
     <>
       {subSubjectData.length > 0 ? (
         subSubjectData.map((subSubject) => (
-          <SubjectCard
+          <NavLink
             key={subSubject.subSubject}
-            imgSrc={subSubject.image}
-            info={subSubject.info}
-            subject={subSubject.subSubject}
-          />
+            to={`/${page}/${choice}/${subSubject.subSubject}`}
+          >
+            <SubjectCard
+              imgSrc={subSubject.image}
+              info={subSubject.info}
+              subject={subSubject.subSubject}
+            />
+          </NavLink>
         ))
       ) : (
         <div>No subjects found for the chosen category</div>

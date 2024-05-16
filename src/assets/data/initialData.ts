@@ -4,7 +4,7 @@ export const initialMainSubjects: mainSubjectTypes[] = [
   {
     mainSubject: "Sport",
     image:
-      "https://www.boras.se/upplevaochgora/senior/halsaochlevnadsvanor/fysiskaktivitet.4.4c20058116c7af11d002b5a3.html",
+      "https://media.istockphoto.com/id/1195696200/sv/vektor/bollar-f%C3%B6r-fotboll-rugby-baseball-och-andra-sporter.jpg?s=612x612&w=0&k=20&c=qLtE0pB7Wzj-gAbULGhls29C24AtAqmi9sE_JJQEWQg=",
     info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero architecto cumque reiciendis, laboriosam odit voluptas, nesciunt soluta illo unde exercitationem magni. Aut facilis ut ipsam tempora ducimus! Animi, officiis odio!",
     link: "/nöjen-och-aktiviteter",
     type: "sport",
