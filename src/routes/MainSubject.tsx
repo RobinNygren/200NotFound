@@ -15,7 +15,7 @@ export const MainSubject = () => {
   const { state } = useContext(GlobalSubjects);
   return (
     <>
-        <div className="flex justify-center items-center gap-10">
+        
       {state.mainSubjects.map((subject: mainSubjectTypes) => (
         <SubjectCard
           imgSrc={subject.image}
@@ -23,7 +23,7 @@ export const MainSubject = () => {
           subject={subject.mainSubject}
         />
       ))}
-      </div>
+      
       <button onClick={() => console.log(page, "useparams")}>click</button>
     </>
   );

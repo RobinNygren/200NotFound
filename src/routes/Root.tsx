@@ -11,7 +11,7 @@ const Root = () => {
       <div className="flex flex-col min-h-screen">
         <Navbar />
 
-        <main className="flex-grow bg-color-scheme-background flex justify-center">
+        <main className="flex-grow bg-color-scheme-background">
           {location.pathname === "/" && (
             <RenderCarousel images={imageURL.images} />
           )}
