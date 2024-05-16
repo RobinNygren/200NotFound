@@ -2,6 +2,7 @@ import { Outlet, useLocation } from "react-router-dom";
 import Footer from "../components/Layout/Footer";
 import Navbar from "../components/Layout/Navbar";
 import RenderCarousel from "../components/RenderCarousel/RenderCarousel";
+import imageURL from "../data/imageURL.json";
 
 const Root = () => {
   const location = useLocation();
