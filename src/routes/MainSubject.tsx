@@ -20,19 +20,22 @@ export const MainSubject = () => {
   );
 
   console.log(subjectData, "subjectdata");
-
   return (
     <>
       {subjectData.length > 0 ? (
-        subjectData.map((data: any) => (
-          <NavLink to={`/${data.page}`} key={data.mainSubject}>
-            <SubjectCard
-              imgSrc={data.image}
-              info={data.info}
-              subject={data.mainSubject}
-            />
-          </NavLink>
-        ))
+        <div className="flex flex-wrap gap-4 justify-center items-center mt-56">
+          {subjectData.map((data: any) => (
+            <NavLink to={`/${data.page}`} key={data.mainSubject} className="w-80">
+              <div className="flex flex-col justify-center items-center border border-color-scheme-primary rounded-xl p-4">
+                <SubjectCard
+                  imgSrc={data.image}
+                  info={data.info}
+                  subject={data.mainSubject}
+                />
+              </div>
+            </NavLink>
+          ))}
+        </div>
       ) : (
         <div>No subject found</div>
       )}
