@@ -10,42 +10,87 @@ export const SubSubjects = () => {
   const { choice } = useParams();
 
   const specificTypes = ["bad", "sport"]; // replace with your specific types
-
-  const filteredSubSubjects = state.subSubjects.filter(
-    (subject) =>
-      subject.type === choice && specificTypes.includes(subject.specificType)
+  const bad = state.subSubjects.filter(
+    (subject) => subject.specificType === "bad"
   );
-  console.log(filteredSubSubjects, "filtered");
+  const sport = state.subSubjects.filter(
+    (subject) => subject.specificType === "sport"
+  );
+  //   const bad = state.subSubjects.some(
+  //     (subject) => subject.specificType === "bad"
+  //   );
+  //   console.log(bad, "bad");
 
   return (
     <>
-      {filteredSubSubjects.length > 0 ? (
-        filteredSubSubjects.map((data: any) => (
-          <SubjectCard
-            imgSrc={data.image}
-            info={data.info}
-            subject={data.mainSubject}
-          />
-        ))
-      ) : (
-        <div>No subject found</div>
-      )}
+      <div>
+        {state.subSubjects.map(
+          (subSubject) =>
+            subSubject.specificType === "sport" && (
+              <SubjectCard
+                imgSrc={subSubject.image}
+                info={subSubject.info}
+                subject={subSubject.subSubject}
+              />
+            )
+        )}
+      </div>
+      <div>
+        {state.subSubjects.map(
+          (subSubject) =>
+            subSubject.specificType === "bad" && (
+              <SubjectCard
+                imgSrc={subSubject.image}
+                info={subSubject.info}
+                subject={subSubject.subSubject}
+              />
+            )
+        )}
+      </div>
     </>
-
-    // <>
-    //   <div>
-    //     {filteredSubSubjects.length > 0 ? (
-    //       filteredSubSubjects.map((subject) => (
-    //         <SubjectCard
-    //           imgSrc={subject.image}
-    //           info={subject.info}
-    //           subject={subject.subSubject}
-    //         />
-    //       ))
-    //     ) : (
-    //       <div>No subSubjects found</div>
-    //     )}
-    //   </div>
-    // </>
   );
+  //   return (
+  //     <>
+  //       {sport.length > 0 ? (
+  //         sport.map((data: any) => (
+  //           <SubjectCard
+  //             key={data.subSubject} // Remember to add a unique key
+  //             imgSrc={data.image}
+  //             info={data.info}
+  //             subject={data.subSubject} // Use subSubject instead of mainSubject
+  //           />
+  //         ))
+  //       ) : (
+  //         <div>No subjects found for the chosen specific type and type</div>
+  //       )}
+  //       {bad.length > 0 ? (
+  //         bad.map((data: any) => (
+  //           <SubjectCard
+  //             key={data.subSubject} // Remember to add a unique key
+  //             imgSrc={data.image}
+  //             info={data.info}
+  //             subject={data.subSubject} // Use subSubject instead of mainSubject
+  //           />
+  //         ))
+  //       ) : (
+  //         <div>No subjects found for the chosen specific type and type</div>
+  //       )}
+  //     </>
+
+  //     // <>
+  //     //   <div>
+  //     //     {filteredSubSubjects.length > 0 ? (
+  //     //       filteredSubSubjects.map((subject) => (
+  //     //         <SubjectCard
+  //     //           imgSrc={subject.image}
+  //     //           info={subject.info}
+  //     //           subject={subject.subSubject}
+  //     //         />
+  //     //       ))
+  //     //     ) : (
+  //     //       <div>No subSubjects found</div>
+  //     //     )}
+  //     //   </div>
+  //     // </>
+  //   );
 };
