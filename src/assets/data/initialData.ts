@@ -11,21 +11,24 @@ export const initialMainSubjects: mainSubjectTypes[] = [
   },
   {
     mainSubject: "Badplatser",
-    image: "",
+    image:
+      "https://www.boras.se/images/18.12bf08d215c19e09dfacc5b1/1495554027557/72dpi_rammsjon_badplats_foto_anna.jpg",
     info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero architecto cumque reiciendis, laboriosam odit voluptas, nesciunt soluta illo unde exercitationem magni. Aut facilis ut ipsam tempora ducimus! Animi, officiis odio!",
     link: "/nöjen-och-aktiviteter",
     type: "bad",
   },
   {
     mainSubject: "Djurparken",
-    image: "",
+    image:
+      "https://static-cdn.sr.se/images/95/3332011_2048_1152.jpg?preset=1024x576",
     info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero architecto cumque reiciendis, laboriosam odit voluptas, nesciunt soluta illo unde exercitationem magni. Aut facilis ut ipsam tempora ducimus! Animi, officiis odio!",
     link: "/nöjen-och-aktiviteter",
     type: "djur",
   },
   {
     mainSubject: "Mat och dryck",
-    image: "",
+    image:
+      "https://cms.dramaten.se/media/jvgnwege/paulikafe-t_0582.jpg?width=1920&height=1080&mode=crop",
     info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero architecto cumque reiciendis, laboriosam odit voluptas, nesciunt soluta illo unde exercitationem magni. Aut facilis ut ipsam tempora ducimus! Animi, officiis odio!",
     link: "/nöjen-och-aktiviteter",
     type: "mat",
@@ -52,7 +55,8 @@ export const initialSubSubjects: subSubjectTypes[] = [
   {
     subSubject: "Hockey",
     info: "Information about hockey",
-    image: "",
+    image:
+      "https://www.borashockey.se/wp-content/uploads/2021/09/blank_blogg.jpg",
     type: "nöjen-och-aktiviteter",
     specificType: "sport",
   },
