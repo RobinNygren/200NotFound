@@ -15,3 +15,10 @@ export type GlobalStateProviderProp = {
 export type ApiRespone = {
 
 }; */
+
+export type CarouselProps = {
+  children: React.ReactNode;
+  autoSlide?: boolean;
+  autoSlideInterval?: number;
+  title: string;
+};
