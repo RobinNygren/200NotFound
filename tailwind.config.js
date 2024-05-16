@@ -13,6 +13,7 @@ export default {
           accent: "#EEE2DC",
           background: "#EDC7B7",
           detail: "#BAB2B5",
+          darker: "#f5c1ac"
         },
       },
     },

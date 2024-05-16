@@ -24,18 +24,24 @@ export const MainSubject = () => {
   return (
     <>
       {subjectData.length > 0 ? (
-        subjectData.map((data: any) => (
+         <div className="flex flex-wrap justify-center items-center mt-48">
+        {subjectData.map((data: any) => (
           <NavLink to={`/${page}/${data.type}`} key={data.mainSubject}>
+            <div className="p-3">
             <SubjectCard
               imgSrc={data.image}
               info={data.info}
               subject={data.mainSubject}
             />
+            </div>
           </NavLink>
-        ))
+        ))}
+        </div>
       ) : (
         <div>No subject found</div>
       )}
     </>
   );
 };
+
+

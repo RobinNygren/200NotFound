@@ -3,7 +3,7 @@ type SubjectCardProps = { imgSrc: any; subject: string; info: string };
 export const SubjectCard = ({ imgSrc, subject, info }: SubjectCardProps) => {
   return (
     <>
-      <div className="max-w-sm rounded overflow-hidden shadow-lg m-4">
+      <div className="max-w-sm rounded overflow-hidden shadow-lg m-4 bg-color-scheme-darker ">
         <img className="w-full" src={imgSrc} alt={subject} />
         <div className="px-6 py-4">
           <h1 className="font-bold text-xl mb-2">{subject}</h1>
