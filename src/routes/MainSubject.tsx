@@ -23,7 +23,6 @@ export const MainSubject = () => {
 
   return (
     <>
-<<<<<<< HEAD
       {subjectData.length > 0 ? (
         subjectData.map((data: any) => (
           <NavLink to={`/${data.page}`} key={data.mainSubject}>
@@ -37,18 +36,6 @@ export const MainSubject = () => {
       ) : (
         <div>No subject found</div>
       )}
-=======
-        
-      {state.mainSubjects.map((subject: mainSubjectTypes) => (
-        <SubjectCard
-          imgSrc={subject.image}
-          info={subject.info}
-          subject={subject.mainSubject}
-        />
-      ))}
-      
-      <button onClick={() => console.log(page, "useparams")}>click</button>
->>>>>>> c82dd2532d71fb4b11f023f46807d19e25bcf947
     </>
   );
 };
