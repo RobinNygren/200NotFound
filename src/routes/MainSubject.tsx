@@ -15,6 +15,7 @@ export const MainSubject = () => {
   const { state } = useContext(GlobalSubjects);
   return (
     <>
+        
       {state.mainSubjects.map((subject: mainSubjectTypes) => (
         <SubjectCard
           imgSrc={subject.image}
@@ -22,6 +23,7 @@ export const MainSubject = () => {
           subject={subject.mainSubject}
         />
       ))}
+      
       <button onClick={() => console.log(page, "useparams")}>click</button>
     </>
   );

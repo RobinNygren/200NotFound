@@ -25,9 +25,3 @@ const Navbar = () => {
 
 export default Navbar;
 
-{
-  /* <NavLink>
-to="/"
-className="text-xl font-bold text-color-scheme-detail hover:text-color-scheme-accent flex "
-</NavLink> */
-}
