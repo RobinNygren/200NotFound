@@ -22,3 +22,12 @@ export type CarouselProps = {
   autoSlideInterval?: number;
   title: string;
 };
+
+export type CardProps = {
+  src: string;
+  alt?: string;
+};
+
+export type RenderCarouselProps = {
+  images: { src: string; alt?: string }[];
+};
