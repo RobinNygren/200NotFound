@@ -11,7 +11,7 @@ type MainSubjectProps = {
 };
 
 export const MainSubject = () => {
-  const { page } = useParams();
+  const { page, choice } = useParams();
 
   const { state } = useContext(GlobalSubjects);
 
@@ -23,18 +23,18 @@ export const MainSubject = () => {
   return (
     <>
       {subjectData.length > 0 ? (
-        <div className="flex flex-wrap gap-4 justify-center items-center mt-56">
-          {subjectData.map((data: any) => (
-            <NavLink to={`/${data.page}`} key={data.mainSubject} className="w-80">
-              <div className="flex flex-col justify-center items-center border border-color-scheme-primary rounded-xl p-4">
-                <SubjectCard
-                  imgSrc={data.image}
-                  info={data.info}
-                  subject={data.mainSubject}
-                />
-              </div>
-            </NavLink>
-          ))}
+         <div className="flex flex-wrap justify-center items-center mt-48">
+        {subjectData.map((data: any) => (
+          <NavLink to={`/${page}/${data.type}`} key={data.mainSubject}>
+            <div className="p-3">
+            <SubjectCard
+              imgSrc={data.image}
+              info={data.info}
+              subject={data.mainSubject}
+            />
+            </div>
+          </NavLink>
+        ))}
         </div>
       ) : (
         <div>No subject found</div>
@@ -42,3 +42,5 @@ export const MainSubject = () => {
     </>
   );
 };
+
+

@@ -33,12 +33,16 @@ export type RenderCarouselProps = {
 };
 
 export type subSubjectTypes = {
-  sport: { subSubject: string; info: string; image: string }[];
-  bad: { subSubject: string; info: string; image: string }[];
+  subSubject: string;
+  info: string;
+  image: string;
+  type: string;
+  specificType: string;
 };
 export type mainSubjectTypes = {
   mainSubject: string;
   image: any;
   info: string;
   link: string;
+  type: string;
 };
