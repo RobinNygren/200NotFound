@@ -8,11 +8,11 @@ export default {
     extend: {
       colors: {
         "color-scheme": {
-          primary: "#0B0C10",
-          secondary: "#C5C6C7",
-          accent: "#45A29E",
-          background: "#1F2833",
-          detail: "#66FCF1",
+          primary: "#123C69",
+          secondary: "#123C69",
+          accent: "#EEE2DC",
+          background: "#EDC7B7",
+          detail: "#BAB2B5",
         },
       },
     },
