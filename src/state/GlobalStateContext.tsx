@@ -4,8 +4,8 @@ import { initialSubSubjects } from "../assets/data/SubCategoryContext";
 // import { initialSongs } from "../data/SongContext";
 // import { SongType } from "../Types/SongTypes";
 // import { Action } from "../Types/ReducerTypes";
-import { SubSubjects } from "../routes/SubCategory";
-import { MainSubject } from "../routes/MainCategory";
+import { SubCategory } from "../routes/SubCategory";
+import { MainCategory } from "../routes/MainCategory";
 import { mainSubjectTypes, subSubjectTypes } from "../types/types";
 
 type GlobalContextType = {
