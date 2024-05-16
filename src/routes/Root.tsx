@@ -3,16 +3,15 @@ import Footer from "../components/Layout/Footer";
 import Navbar from "../components/Layout/Navbar";
 import RenderCarousel from "../components/RenderCarousel/RenderCarousel";
 
-
 const Root = () => {
-  /*   const location = useLocation(); */
+  const location = useLocation();
   return (
     <>
       <div className="flex flex-col min-h-screen">
         <Navbar />
-  
+
         <main className="flex-grow bg-color-scheme-background">
-          {/* {location.pathname === "/" && <placeholder />} */}
+          {location.pathname === "/" && <Root />}
           <RenderCarousel
             images={[
               {

@@ -19,12 +19,12 @@ const router = createBrowserRouter([
         element: <NotFound />,
       },
       {
-        path: "/",
+        path: "/:mainsubject",
         element: <MainSubject />,
       },
       {
         //params för vald kategori?
-        path: "/:Headcategory/:SubCategory",
+        path: "/:headcategory/:subcate",
         element: <SubSubjects />,
       },
     ],

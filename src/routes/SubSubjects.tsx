@@ -3,10 +3,22 @@
 import { SubjectDetails } from "../components/SubjectDetails/SubjectDetails";
 
 export const SubSubjects = () => {
+  const data = [
+    {
+      title: "Nöjen",
+      description:
+        "Utforska olika nöjesaktiviteter och evenemang för att roa dig och koppla av.",
+    },
+    {
+      title: "Myndigheter",
+      description:
+        "Få information om olika myndigheter och deras funktioner för att underlätta din vardag och förstå dina rättigheter.",
+    },
+  ];
   return (
     <>
       <div>SubSubjcts</div>;
-      <SubjectDetails />
+      <SubjectDetails data={data} />
     </>
   );
 };
