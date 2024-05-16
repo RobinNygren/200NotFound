@@ -24,7 +24,7 @@ const router = createBrowserRouter([
       },
       {
         //params för vald kategori?
-        path: "/",
+        path: "/:Headcategory/:SubCategory",
         element: <SubSubjects />,
       },
     ],
