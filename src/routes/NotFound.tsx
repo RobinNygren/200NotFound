@@ -1,10 +1,13 @@
-import React from "react";
+import { NavLink } from "react-router-dom";
 
 const NotFound = () => {
   return (
-    <div>
-      <h1>helloo</h1>
-    </div>
+    <>
+      <h1>Error 404 page not found.</h1>
+      <p>
+        <NavLink to="/"> Back to home </NavLink>
+      </p>
+    </>
   );
 };
 
