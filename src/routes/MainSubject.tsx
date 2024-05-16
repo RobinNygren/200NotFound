@@ -1,30 +1,23 @@
-// Här lägger vi in cards för varje sub heading, alltså t.ex: Vård, Nöje etc.
-import { useContext } from "react";
-import { SubjectCard } from "../components/SubjectCard/SubjectCard";
-import { GlobalSubjects } from "../state/GlobalStateContext";
-import { mainSubjectTypes } from "../types/types";
+import React, { useContext } from "react";
 import { NavLink, useParams } from "react-router-dom";
-import { MenuItem } from "@headlessui/react";
+import { GlobalSubjects } from "../state/GlobalStateContext";
+import { SubjectCard } from "../components/SubjectCard/SubjectCard";
 
-type MainSubjectProps = {
-  subject: string;
-};
-
-export const MainSubject = () => {
-  const { page, choice } = useParams();
-
+const MainSubject = () => {
+  const { page } = useParams();
   const { state } = useContext(GlobalSubjects);
 
   const subjectData = state.mainSubjects.filter(
-    (item: any) => item.link === `/${page}`
+    (item) => item.link === `/${page}`
   );
 
-  console.log(subjectData, "subjectdata");
+  console.log(page, "page in MainSubject");
+  console.log(subjectData, "subjectData for MainSubject");
 
   return (
     <>
       {subjectData.length > 0 ? (
-        subjectData.map((data: any) => (
+        subjectData.map((data) => (
           <NavLink to={`/${page}/${data.type}`} key={data.mainSubject}>
             <SubjectCard
               imgSrc={data.image}
@@ -39,3 +32,5 @@ export const MainSubject = () => {
     </>
   );
 };
+
+export default MainSubject;

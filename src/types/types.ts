@@ -46,3 +46,7 @@ export type mainSubjectTypes = {
   link: string;
   type: string;
 };
+export type GlobalContextType = {
+  subSubjects: subSubjectTypes[];
+  mainSubjects: mainSubjectTypes[];
+};

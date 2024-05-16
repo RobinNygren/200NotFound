@@ -5,8 +5,9 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/Root.tsx";
 import NotFound from "./routes/NotFound.tsx";
-import { MainSubject } from "./routes/MainSubject.tsx";
-import { SubSubjects } from "./routes/SubSubjects.tsx";
+import MainSubject from "./routes/MainSubject.tsx";
+import SubSubjects from "./routes/SubSubjects.tsx";
+import { GlobalSubjectsProvider } from "./state/GlobalStateContext.tsx";
 
 const router = createBrowserRouter([
   {
@@ -33,8 +34,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    {/* <GlobalStateProvider> */}
-    <RouterProvider router={router} />
-    {/*  </GlobalStateProvider> */}
+    <GlobalSubjectsProvider>
+      <RouterProvider router={router} />
+    </GlobalSubjectsProvider>
   </React.StrictMode>
 );

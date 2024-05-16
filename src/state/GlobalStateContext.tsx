@@ -1,17 +1,13 @@
-import { createContext } from "react";
-import { initialMainSubjects } from "../assets/data/MainSubjectContext";
-import { initialSubSubjects } from "../assets/data/SubSubjectContext";
-// import { initialSongs } from "../data/SongContext";
-// import { SongType } from "../Types/SongTypes";
-// import { Action } from "../Types/ReducerTypes";
-import { SubSubjects } from "../routes/SubSubjects";
-import { MainSubject } from "../routes/MainSubject";
-import { mainSubjectTypes, subSubjectTypes } from "../types/types";
-
-type GlobalContextType = {
-  subSubjects: subSubjectTypes[];
-  mainSubjects: mainSubjectTypes[];
-};
+import { createContext, ReactNode, useReducer } from "react";
+import {
+  initialMainSubjects,
+  initialSubSubjects,
+} from "../assets/data/initialData";
+import {
+  mainSubjectTypes,
+  subSubjectTypes,
+  GlobalContextType,
+} from "../types/types";
 
 export const initialSubjects: GlobalContextType = {
   subSubjects: initialSubSubjects,
@@ -23,6 +19,25 @@ export const GlobalSubjects = createContext<{
 }>({
   state: initialSubjects,
 });
+
+export const GlobalSubjectsProvider = ({
+  children,
+}: {
+  children: ReactNode;
+}) => {
+  const [state] = useReducer((state: GlobalContextType, action: any) => {
+    switch (action.type) {
+      default:
+        return state;
+    }
+  }, initialSubjects);
+
+  return (
+    <GlobalSubjects.Provider value={{ state }}>
+      {children}
+    </GlobalSubjects.Provider>
+  );
+};
 
 // import { createContext } from "react";
 // // import { GlobalState, Action } from "../types/types";

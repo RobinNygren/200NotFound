@@ -1,4 +1,4 @@
-type SubjectCardProps = { imgSrc: any; subject: string; info: string };
+type SubjectCardProps = { imgSrc: string; subject: string; info: string };
 
 export const SubjectCard = ({ imgSrc, subject, info }: SubjectCardProps) => {
   return (
