@@ -1,11 +1,11 @@
-type SubjectCardProps = { imgSrc: any; subject: string; info: string };
+type SubjectCardProps = { imgSrc: any; subject: any; info: string };
 
 export const SubjectCard = ({ imgSrc, subject, info }: SubjectCardProps) => {
   return (
     <>
-      <div>
+      <div className="flex">
         <h1>{subject}</h1>
-        <img src={imgSrc} alt="" />
+        <img src={imgSrc} alt={imgSrc} />
         <p>{info}</p>
       </div>
     </>

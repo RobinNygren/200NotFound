@@ -1,22 +1,25 @@
 // Här lägger vi in mer specifik info om HeadSubjects, såsom länkar och info om olika vårdcentraler, nummer till 1177 etc. Eller tex för nöjen olika sporter ifall du valt sport som headSubject.
 
+import { SubjectCard } from "../components/SubjectCard/SubjectCard";
+
 export const SubSubjects = () => {
   const data = [
     {
-      title: "Nöjen",
-      description:
-        "Utforska olika nöjesaktiviteter och evenemang för att roa dig och koppla av.",
-    },
-    {
-      title: "Myndigheter",
-      description:
-        "Få information om olika myndigheter och deras funktioner för att underlätta din vardag och förstå dina rättigheter.",
+      img: "insert IMG here",
+      title: "Sport",
+      description: "Här kan du spela olika sporter",
     },
   ];
   return (
     <>
       <div>
-        <SubjectCard imgSrc={""} info="" subject="" />
+        {data.map((title) => (
+          <SubjectCard
+            imgSrc={title.img}
+            info={title.description}
+            subject={title.title}
+          />
+        ))}
       </div>
     </>
   );
