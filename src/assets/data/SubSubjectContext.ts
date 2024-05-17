@@ -53,10 +53,10 @@ export const initialSubSubjects: subSubjectTypes[] = [
   },
 
   {
-    subSubject: "Säs",
+    subSubject: "SÄS",
     info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero architecto cumque reiciendis, laboriosam odit voluptas, nesciunt soluta illo unde exercitationem magni. Aut facilis ut ipsam tempora ducimus! Animi, officiis odio!",
     image:
-      "https://www.boras.se/images/18.4f4814b215c171faa9349338/1495205883290/72dpi_almenas_badramp_foto_anna.jpg",
+      "https://www.sweco.se/wp-content/uploads/sites/3/2022/11/Lokal_NKS_1680_1000.jpg",
     type: "nöjen",
     specificType: "Sjukhus",
   },
@@ -64,7 +64,7 @@ export const initialSubSubjects: subSubjectTypes[] = [
     subSubject: "Vårdcentral",
     info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero architecto cumque reiciendis, laboriosam odit voluptas, nesciunt soluta illo unde exercitationem magni. Aut facilis ut ipsam tempora ducimus! Animi, officiis odio!",
     image:
-      "https://www.boras.se/images/18.12bf08d215c19e09dfaa8055/1495469983322/72dpi_kype_badplats_foto_anna.jpg",
+      "https://www.1177.se/globalassets/1177/regional/varmland/media/bilder/halso--och-sjukvard/microsoftteams-image-330.png",
     type: "nöjen",
     specificType: "Vårdcentral",
   },
@@ -72,7 +72,7 @@ export const initialSubSubjects: subSubjectTypes[] = [
     subSubject: "Rådgivning",
     info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero architecto cumque reiciendis, laboriosam odit voluptas, nesciunt soluta illo unde exercitationem magni. Aut facilis ut ipsam tempora ducimus! Animi, officiis odio!",
     image:
-      "https://www.boras.se/images/18.12bf08d215c19e09dfacce4d/1495555180099/72dpi_rammsjon_badplats_foto_anna.jpg",
+      "https://storage.googleapis.com/gcp-bloggse-storage/574/574364/1177_vardguiden1470x810_noga-kopia_5a32d9ef9606ee0183f211fe.png",
     type: "nöjen",
     specificType: "1177",
   },

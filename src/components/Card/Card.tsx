@@ -3,7 +3,7 @@ import { CardProps } from "../../types/types";
 
 const Card: React.FC<CardProps> = ({ src, alt }) => {
   return (
-    <div className="w-60 bg-white shadow-lg rounded-lg overflow-hidden">
+    <div className="w-60 bg-color-scheme-lightgrey shadow-lg rounded-lg overflow-hidden">
       <div
         className="flex justify-center items-center mb-4"
         style={{ minHeight: "250px" }}

@@ -10,10 +10,12 @@ export default {
         "color-scheme": {
           primary: "#123C69",
           secondary: "#123C69",
+          mediumgrey: "#53575d",
           accent: "#EEE2DC",
-          background: "#EDC7B7",
+          background: "#F8F8FF",
           detail: "#BAB2B5",
-          darker: "#f5c1ac"
+          darker: "#f5c1ac",
+          lightgrey: "#e2e7ec",
         },
       },
     },
