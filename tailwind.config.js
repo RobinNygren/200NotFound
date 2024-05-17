@@ -10,7 +10,7 @@ export default {
         "color-scheme": {
           primary: "#123C69",
           secondary: "#123C69",
-          mediumgrey: "#53575d",
+          mediumgrey: "#828282",
           accent: "#EEE2DC",
           background: "#F8F8FF",
           detail: "#BAB2B5",

@@ -11,11 +11,11 @@ const Navbar = () => {
         </NavLink>
 
         <NavLink to="/">
-          <h1 className=" ml-32  text-3xl font-bold text-color-scheme-detail hover:text-color-scheme-accent  cursor-pointer">
+          <h1 className=" ml-32  text-3xl font-bold text-white hover:text-color-scheme-accent  cursor-pointer">
             Borås Starter Kit
           </h1>
         </NavLink>
-        <div className="text-3xl font-bold text-color-scheme-detail hover:text-color-scheme-accent">
+        <div className="text-3xl font-bold text-white hover:text-color-scheme-accent">
           <Dropdown />
         </div>
       </div>
