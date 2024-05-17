@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import IconPrototype from "/IconPrototype.svg";
+import loggo from "/loggo.svg";
 import Dropdown from "./Dropdown";
 
 const Navbar = () => {
@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="bg-color-scheme-mediumgrey text-bookFlix-colors-detail p-4">
       <div className="flex justify-between items-center">
         <NavLink to="/">
-          <img className="w-16 ml-9" src={IconPrototype} alt="" />
+          <img className="w-16 ml-9" src={loggo} alt="" />
         </NavLink>
 
         <NavLink to="/">
