@@ -10,7 +10,12 @@ const RenderCarousel: React.FC<RenderCarouselProps> = ({ images }) => {
       <Carousel title="subject">
         {images.map((image, index) => (
           <NavLink to={`${image.link}`}>
-            <Card key={index} src={image.src} alt={image.alt} />
+            <Card
+              key={index}
+              src={image.src}
+              alt={image.alt}
+              subject={image.subject}
+            />
           </NavLink>
         ))}
       </Carousel>
