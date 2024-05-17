@@ -21,7 +21,8 @@ export const initialSubSubjects: subSubjectTypes[] = [
   {
     subSubject: "Hockey",
     info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero architecto cumque reiciendis, laboriosam odit voluptas, nesciunt soluta illo unde exercitationem magni. Aut facilis ut ipsam tempora ducimus! Animi, officiis odio!",
-    image: "",
+    image:
+      "https://www.borashockey.se/wp-content/uploads/2022/06/277366645_391908429602829_74171745321574849_n.jpg",
     type: "nöjen",
     specificType: "Sport",
   },
