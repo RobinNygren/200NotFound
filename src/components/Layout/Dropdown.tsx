@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { IoIosArrowDown } from "react-icons/io";
 
 const Dropdown: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,8 +16,12 @@ const Dropdown: React.FC = () => {
 
   return (
     <div className="relative inline-block text-left">
-      <button onClick={toggleDropdown} className="text-2xl font-bold mr-24">
+      <button
+        onClick={toggleDropdown}
+        className="flex items-center text-2xl font-bold mr-24"
+      >
         Välj språk
+        <IoIosArrowDown />
       </button>
       {isOpen && (
         <div className="absolute right-0 mt-2 w-56 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-50">
