@@ -4,7 +4,7 @@ import Dropdown from "./Dropdown";
 
 const Navbar = () => {
   return (
-    <nav className="bg-color-scheme-mediumgrey text-bookFlix-colors-detail p-4">
+    <nav className="rounded-b-lg bg-color-scheme-mediumgrey text-bookFlix-colors-detail p-4">
       <div className="flex justify-between items-center">
         <NavLink to="/">
           <img className="w-16 ml-9" src={loggo} alt="" />
