@@ -19,6 +19,12 @@
       "subject": "Arbetsmarknad"
     },
     {
+      "src": "https://www.elitutbildning.se/wp-content/uploads/2016/11/Boras-yrkeshogskola.png",
+      "alt": "alt9",
+      "link": "/page9",
+      "subject": "Utbildning"
+    },
+    {
       "src": "https://tidningenkonsulten.se/app/uploads/sites/3/2022/03/skatteverket-byline-mostphotos-792x320.jpg",
       "alt": "alt4",
       "link": "/page4",
@@ -37,28 +43,22 @@
       "subject": "Kultur"
     },
     {
-      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOniZ5a8XL5Tg-Rd9NcSg308iyxnUl7ZDmty3X_5LkYg&s",
-      "alt": "Navet",
-      "link": "/navet",
-      "subject": ""
+      "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgn1ANjuJ0DSFUwVHL21bG86MUrctjcLyyASEQ6SjcTw&ss",
+      "alt": "boende",
+      "link": "/boende",
+      "subject": "Boende"
     },
     {
       "src": "https://www.boras.se/images/18.2c696da0186d27a65085cbf3/1705580158319/VISKning_webb.webp",
       "alt": "alt8",
       "link": "/page8",
-      "subject": ""
+      "subject": "Parker"
     },
     {
-      "src": "https://www.boras.se/images/18.2cfd8fa7158d2732081e0136/1705582836649/Frisbee.webp",
-      "alt": "alt9",
-      "link": "/page9",
-      "subject": ""
-    },
-    {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Extri%C3%B6r-Simonsland.jpg",
+      "src": "https://www.hb.se/contentassets/6a0e8143f392452ebccfcc4d9461768c/1440x810-techarena-boras.jpg?width=800&rmode=min",
       "alt": "alt10",
       "link": "/page10",
-      "subject": ""
+      "subject": "Techarena Borås"
     }
   ]
 }

@@ -15,7 +15,9 @@ const Root = () => {
           {location.pathname === "/" && (
             <RenderCarousel images={imageURL.images} />
           )}
-          <Outlet />
+          <div className="flex justify-center items-center">
+            <Outlet />
+          </div>
         </main>
         <Footer />
       </div>

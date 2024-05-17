@@ -19,7 +19,7 @@ export const SubSubjects = () => {
 
   return (
     <>
-      <div className="flex flex-wrap justify-center items-center mt-48">
+      <div className="flex flex-wrap justify-center items-center ">
         {filteredSubSubjects.map((subSubject: any) => (
           <div className="p-3" key={subSubject.subSubject}>
             <SubjectCard

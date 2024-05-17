@@ -23,7 +23,7 @@ export const MainSubject = () => {
   return (
     <>
       {subjectData.length > 0 ? (
-        <div className="flex flex-wrap justify-center items-center mt-48">
+        <div className="flex flex-wrap justify-center items-center ">
           {subjectData.map((data: mainSubjectTypes) => (
             <NavLink to={`/${page}/${data.mainSubject}`} key={data.mainSubject}>
               <div className="p-3">
