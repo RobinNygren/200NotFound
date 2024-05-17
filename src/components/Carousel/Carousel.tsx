@@ -3,7 +3,7 @@ import ChevronLeft from "../../assets/icons/ChevronLeft.svg";
 import ChevronRight from "../../assets/icons/ChevronRight.svg";
 import { CarouselProps } from "../../types/types";
 
-const Carousel: React.FC<CarouselProps> = ({ title, children }) => {
+const Carousel: React.FC<CarouselProps> = ({ children }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides = React.Children.toArray(children);
   const itemsPerPage = 5;
@@ -25,10 +25,7 @@ const Carousel: React.FC<CarouselProps> = ({ title, children }) => {
   const translateAmount = -(currentIndex * 100);
 
   return (
-    <div className="relative mx-auto max-w-screen-xl bg-color-scheme-primary my-16 shadow-lg rounded-lg">
-      <h1 className="flex justify-center items-center text-2xl font-bold text-gray-800 py-4">
-        {title}
-      </h1>
+    <div className="relative mx-auto max-w-screen-xl bg-color-scheme-primary my-16 shadow-lg rounded-lg p-4 ">
       <div className="relative overflow-hidden">
         <button
           onClick={prev}

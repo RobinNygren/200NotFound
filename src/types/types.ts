@@ -20,7 +20,7 @@ export type CarouselProps = {
   children: React.ReactNode;
   autoSlide?: boolean;
   autoSlideInterval?: number;
-  title: string;
+  title?: string;
 };
 
 export type CardProps = {
