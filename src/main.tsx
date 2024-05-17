@@ -9,6 +9,7 @@ import MainSubject from "./routes/MainSubject.tsx";
 import SubSubjects from "./routes/SubSubjects.tsx";
 import { GlobalSubjectsProvider } from "./state/GlobalStateContext.tsx";
 import SubSubjectDetail from "./components/SubSubjectDetail/SubSubjectDetail.tsx";
+import MainSubjectDetail from "./components/MainSubjectDetail/MainSubjectDetail.tsx";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/:page",
         element: <MainSubject />,
+      },
+      {
+        path: "/:page/details",
+        element: <MainSubjectDetail />,
       },
       {
         //params för vald kategori?

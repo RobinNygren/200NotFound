@@ -33,6 +33,30 @@ export const initialMainSubjects: mainSubjectTypes[] = [
     link: "/nöjen-och-aktiviteter",
     type: "mat",
   },
+  {
+    mainSubject: "Sjukhus",
+    image:
+      "https://sas.vgregion.se/contentassets/bf2f11fdeb6a47e2af7f60aa5cdc3361/cropped-vgr16-sc384sc384s20entrc3a9202015_03381.jpg",
+    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero architecto cumque reiciendis, laboriosam odit voluptas, nesciunt soluta illo unde exercitationem magni. Aut facilis ut ipsam tempora ducimus! Animi, officiis odio!",
+    link: "/vård-och-omsorg",
+    type: "vård",
+  },
+  {
+    mainSubject: "Vårdcentral",
+    image:
+      "https://www.1177.se/api/hjv/unit/logotype/SE2321000131-E000000000426",
+    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero architecto cumque reiciendis, laboriosam odit voluptas, nesciunt soluta illo unde exercitationem magni. Aut facilis ut ipsam tempora ducimus! Animi, officiis odio!",
+    link: "/vård-och-omsorg",
+    type: "vårdcentral",
+  },
+  {
+    mainSubject: "1177",
+    image:
+      "https://www.sidsjovc.se/wp-content/uploads/2015/10/1177_VG_etjanster_banner_E-tjanster.png",
+    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero architecto cumque reiciendis, laboriosam odit voluptas, nesciunt soluta illo unde exercitationem magni. Aut facilis ut ipsam tempora ducimus! Animi, officiis odio!",
+    link: "/vård-och-omsorg",
+    type: "vård",
+  },
 ];
 
 export const initialSubSubjects: subSubjectTypes[] = [
@@ -83,5 +107,34 @@ export const initialSubSubjects: subSubjectTypes[] = [
       "https://www.boras.se/images/18.12bf08d215c19e09dfacce4d/1495555180099/72dpi_rammsjon_badplats_foto_anna.jpg",
     type: "nöjen-och-aktiviteter",
     specificType: "bad",
+  },
+  {
+    subSubject: "Akutmottagning",
+    info: "Information about Akutmottagning",
+    image:
+      "https://sas.vgregion.se/contentassets/7600ce92fc3e4bd88ebd12cffd9300ec/cropped-vgr21-sc384akutmottagning-8345_38445.jpg?w=1200&h=675&mode=crop&anchor=topcenter",
+    type: "sjukhus",
+    specificType: "vård-och-omsorg",
+  },
+  {
+    subSubject: "Barnavdelning",
+    info: "Information about Barnavdelning",
+    image: "https://example.com/barnavdelning.jpg",
+    type: "sjukhus",
+    specificType: "vård-och-omsorg",
+  },
+  {
+    subSubject: "Allmänmedicin",
+    info: "Information about Allmänmedicin",
+    image: "https://example.com/allmanmedicin.jpg",
+    type: "vårdcentral",
+    specificType: "vård-och-omsorg",
+  },
+  {
+    subSubject: "Psykiatri",
+    info: "Information about Psykiatri",
+    image: "https://example.com/psykiatri.jpg",
+    type: "sjukhus",
+    specificType: "vård-och-omsorg",
   },
 ];

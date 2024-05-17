@@ -18,13 +18,18 @@ const MainSubject = () => {
     <>
       {subjectData.length > 0 ? (
         subjectData.map((data) => (
-          <NavLink to={`/${page}/${data.type}`} key={data.mainSubject}>
-            <SubjectCard
-              imgSrc={data.image}
-              info={data.info}
-              subject={data.mainSubject}
-            />
-          </NavLink>
+          <div key={data.mainSubject}>
+            <NavLink to={`/${page}/${data.type}`}>
+              <SubjectCard
+                imgSrc={data.image}
+                info={data.info}
+                subject={data.mainSubject}
+              />
+            </NavLink>
+            <NavLink to={`/${page}/details`}>
+              <button>More about {data.mainSubject}</button>
+            </NavLink>
+          </div>
         ))
       ) : (
         <div>No subject found</div>
